@@ -1,0 +1,37 @@
+{
+  "name": "open-quant-data-source",
+  "version": "0.1.0",
+  "description": "Open Quant data source",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc --declaration",
+    "prepublish": "npm run build",
+    "test": "npm run test-only",
+    "test-only": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "jest": "^24.0.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.1"
+  },
+  "dependencies": {
+    "@types/mongodb": "^3.1.28",
+    "date-fns": "^1.30.1",
+    "mongodb": "^3.3.0-beta2"
+  },
+  "peerDependencies": {},
+  "author": "Yulong Ruan <ruanyu1@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OpenQuantJS/open-quant.git"
+  },
+  "homepage": "https://github.com/OpenQuantJS/open-quant",
+  "bugs": "https://github.com/OpenQuantJS/open-quant/issues"
+}
