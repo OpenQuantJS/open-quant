@@ -23,7 +23,7 @@ export class Runner extends EventEmitter {
     const q = async.queue<string>((code, callback) => {
       this.ds.query(code).then(data => {
         if (data) {
-          if (strategy(data)) {
+          if (strategy(data, code)) {
             this.emit(RunnerEvent.ScanReceiveData, code, data)
           } else {
             this.emit(RunnerEvent.ScanSkipData, code, data)

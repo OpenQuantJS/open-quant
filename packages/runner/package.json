@@ -15,7 +15,10 @@
     "@types/jest": "^22.2.3",
     "@types/node": "^12.6.8",
     "@types/async": "^3.0.0",
+    "@types/ramda": "^0.26.18",
     "jest": "^24.0.0",
+    "ramda": "0.26.1",
+    "technical-indicator": "^0.4.1",
     "ts-jest": "^23.10.5",
     "typescript": "^3.5.3"
   },
